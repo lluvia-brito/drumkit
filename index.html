@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drumkit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <div>
+        <div data-key="65" class="key">
+          <kbd>A</kbd> <span class="sound">Crash Cymbal</span>
+        </div>
+        <div data-key="87" class="key">
+          <kbd>W</kbd> <span class="sound">Ride Cymbal</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd> <span class="sound">Snare</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd> <span class="sound">Tom Tom</span>
+        </div>
+      </div>
+
+      <div>
+        <div data-key="37" class="key">
+          <kbd>←</kbd><span class="sound">Flam</span>
+        </div>
+        <div data-key="40" class="key">
+          <kbd>↓</kbd><span class="sound">Foot Hat</span>
+        </div>
+        <div data-key="38" class="key">
+          <kbd>↑</kbd> <span class="sound">Half Hat</span>
+        </div>
+        <div data-key="39" class="key">
+          <kbd>→</kbd> <span class="sound">Closed Hat</span>
+        </div>
+      </div>
+    </div>
+
+    <audio data-key="65" src="crash.wav"></audio>
+    <audio data-key="87" src="ride.wav"></audio>
+    <audio data-key="83" src="snareOff.wav"></audio>
+    <audio data-key="68" src="tom.wav"></audio>
+    <audio data-key="37" src="flam.wav"></audio>
+    <audio data-key="40" src="pHat.wav"></audio>
+    <audio data-key="38" src="halfHat.wav"></audio>
+    <audio data-key="39" src="clHat.wav"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
